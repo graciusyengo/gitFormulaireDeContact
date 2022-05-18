@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenaire">
+        <header class="headerMain">
+          <h1>Repectoire de contacts</h1>
+            </header>
+            <main class="main">
+                    <div class="bloc1">
+                      <header class="header1">
+                        <h1>Formulaire de contacts</h1>
+
+                      </header>
+                    
+                      <form  class="form">
+                        <div class="input1">
+                          <label for="name">Prenom </label><br>
+                          <input type="text" name="name" id="lastName" required>
+                        </div>
+                        
+                        <div class="input2">
+                          <label for="name">Nom </label><br>
+                          <input type="text" name="name" id="name">
+                        </div>
+                        
+                          <label for="pet-select" class="groupeLabel">Groupe</label><br>
+
+                          <select name="pets" class="groupSelect">
+                              <option value="" ></option><br>
+                              <option value="dog">Dog</option>
+                              <option value="cat">Cat</option>
+                              <option value="hamster">Hamster</option>
+                              
+                          </select>
+                        <div class="input3">
+                          <label for="story">Bio</label><br>
+
+                            <textarea id="story" name="story"
+                                      rows="5" cols="70" id="textArrea">
+                            .
+                            </textarea>
+                        </div>
+                        <div class="myImage">
+                          <input type="file"  id="imageInput" accept="image/*" value="choisir un fichier">
+                          <fieldset>
+                            <legend>mon profil</legend>
+                            <img src="./img/imgprofile.png" id="displayImage">
+                          </fieldset>
+                          
+                         
+                        </div>
+                      
+                        <div class="myButton">
+                          <button id="btn1" type="submit" >
+                              créer
+                            
+                          </button>
+                           <button id="btn2">
+                            reinit
+                            
+                          </button> 
+                          
+                        </div>
+                        </form>  
+                    </div> 
+                    <div class="bloc2">
+                      <header class="header2">
+                       <div class="listContact"> <h1>Liste de contacts</h1>
+                       </div>
+                       <div class="contact"></div>
+                        
+                      </header>
+                    
+                        <div>
+
+                        </div>
+                    </div>
+
+                  </main>
+        
+        
+
+    </div>
+
+   <script src="formContact.js"></script> 
+</body>
+</html>
